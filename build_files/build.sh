@@ -11,6 +11,9 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux 
+dnf5 install -y mpv
+dnf5 install -y hyprland
+dnf5 install -y ffmpeg
 
 # Use a COPR Example:
 #
