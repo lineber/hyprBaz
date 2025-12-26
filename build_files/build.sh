@@ -12,8 +12,9 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 dnf5 install -y mpv
-dnf install -y hyprland
-dnf install -y ffmpeg
+dnf5 install -y ffmpeg
+dnf copr enable solopasha/hyprland
+dnf install -y hyprland --allowerasing
 
 # Use a COPR Example:
 #
