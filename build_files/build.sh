@@ -10,9 +10,9 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
 dnf5 install -y mpv
-dnf5 install -y ffmpeg
+dnf5 install -y cockpit
+dnf5 install -y cockpit-machines
 dnf copr enable solopasha/hyprland
 dnf install -y hyprland --allowerasing
 
